@@ -1,0 +1,124 @@
+body {
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4b134f, #c94b4b);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4b134f, #c94b4b);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    min-height: 100vh;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+}
+
+.container {
+    text-align: center;
+    width: 60%;
+}
+
+.quote-section {
+    text-align: center;
+    padding: 2rem;
+    border-radius: 20px;
+    background-color: #fff;
+    flex: 0 0 80%;
+    position: relative;
+}
+
+.quote-section h2 {
+    color: #c94b4b;
+    font-size: 30px;
+    margin-top: 0;
+}
+
+#quoteBtn {
+    border: none;
+    color: #fff;
+    background-color: #c94b4b;
+    font-size: 1rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    min-width: 200px;
+    height: 40px;
+}
+
+#quoteBtn:hover {
+    background-color: linear-gradient(135deg, #7b7fd5 20%, #86a8e7 30%, #91eac9 100%);
+}
+
+blockquote {
+    background: #f9f9f9;
+    border-left: 10px solid #fcdbb9;
+    margin: 1.5rem;
+    padding: 0.5rem;
+}
+
+
+
+.all-quotes {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.img {
+    padding: 1rem;
+}
+
+.img img {
+    max-width: 200px;
+    padding-right: 4rem;
+    height: 260px;
+}
+
+
+.quote-content {
+    text-align: left;
+}
+
+.quote-content h3 {
+    font-size: 32px;
+    color: #53174f;
+}
+
+ul {
+    padding: 0 15px;
+}
+
+@media(max-width:768px) {
+    .all-quotes {
+        flex-direction: column
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .quote-section {
+        height: 90vh;
+    }
+
+    .img {
+        text-align: center;
+        width: 100%;
+    }
+
+    .img img {
+        padding-right: 2rem;
+    }
+
+    #quoteBtn {
+        width: 100%;
+        margin-top: 80px;
+    }
+
+}
+
+@media(max-width:500px) {
+    #quoteBtn {
+        margin-top: 30px;
+    }
+}
