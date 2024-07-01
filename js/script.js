@@ -41,7 +41,7 @@ quoteBtn.addEventListener('click', displayQuote);
 
 function displayQuote() {
     let number = Math.floor(Math.random() * quotes.length);
-    quoteAuthor.textContent = quotes[number].name;
+    quoteAuthor.innerHTML = quotes[number].name;
     quote.innerHTML = '';
     quotes[number].quote.forEach((element) => {
         quote.innerHTML += `<ul><li>${element}</li></ul>`;
